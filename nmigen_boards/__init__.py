@@ -86,6 +86,7 @@ class BoardFinder:
             print(i," : ",list(inst.connectors.keys()))
 
     def family(self):
+        fma = {}
         for i,j in self.boards.items():
             inst = j()
             if hasattr(inst,'family'):
